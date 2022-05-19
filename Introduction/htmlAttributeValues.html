@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attribute Values</title>
+    <style>
+        .btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background: #2196f3;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+
+    <h1>JavaScript can change HTML attribute values.</h1>
+
+    <button class="btn" onclick="document.getElementById('bulb').src='./assets/lighton.png'">
+        Light On
+    </button>
+
+    <img id="bulb" src="./assets/lightoff.png" style="width:100px">
+
+    <button class="btn" onclick="document.getElementById('bulb').src='./assets/lightoff.png'">
+        Light Off
+    </button>
+</body>
+</html>

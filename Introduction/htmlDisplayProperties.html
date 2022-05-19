@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Display Properties</title>
+    <style>
+        .btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background: #2196f3;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+
+    <h1>JavaScript can hide and show an HTML element</h1>
+
+    <p style="font-size: 24px;" id="example">Hello World!</p>
+
+    <button class="btn" type="button" onclick="document.getElementById('example').style.display='none'">
+        Hide Content
+    </button>
+    <button class="btn" type="button" onclick="document.getElementById('example').style.display='block'">
+        Show Content
+    </button>
+
+</body>
+</html>
