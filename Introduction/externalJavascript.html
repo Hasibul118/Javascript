@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Styles</title>
+    <title>External Javascript File</title>
     <style>
         .btn{
             padding: 10px 20px;
@@ -15,16 +15,15 @@
             border-radius: 5px;
         }
     </style>
+    <script src="externalScript.js"></script>
 </head>
-<body style="text-align: center;font-family: Arial, Helvetica, sans-serif;">
+<body style="text-align: center; font-family: Arial, Helvetica, sans-serif;">
+    
+    <h1>Scripts can also be placed in external file</h1>
+    
+    <p style="font-size: 24px;" id="external">External Script Paragraph.</p>
 
-    <h1>JavaScript can change an HTML element styles.</h1>
-
-    <p style="font-size: 18px;" id="example">Hello World!</p>
-
-    <button class="btn" type="button" onclick="document.getElementById('example').style.fontSize='36px'">
-        Increase Font Size
-    </button>
+    <button class="btn" type="button" onclick="externalFunction()">Change Paragraph</button>
 
 </body>
 </html>

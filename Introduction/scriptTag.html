@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Tag Uses</title>
+    <style>
+        .btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background: #2196f3;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function headFunction() {
+          document.getElementById("headExample").innerHTML = "Paragraph changed.";
+        }
+    </script>
+</head>
+<body style="text-align: center; font-family: Arial, Helvetica, sans-serif;">
+    
+    <h1>
+        Scripts can be placed in the <code style="font-size: 115%;"> &ltbody&gt</code>,<br>
+        or in the <code style="font-size: 115%;">&lthead&gt</code> section of an HTML page,<br>
+        or can be place in both <code style="font-size: 115%;"> &ltbody&gt</code> & 
+        <code style="font-size: 115%;">&lthead&gt</code> section.
+    </h1> <hr style="border-width: 5px;">
+
+    <div style="margin-bottom: 40px;">
+        <h2><code style="font-size: 120%;">&lthead&gt</code> script example</h2>
+
+        <p style="font-size: 24px;" id="headExample">Head Script Paragraph.</p>
+
+        <button class="btn" type="button" onclick="headFunction()">Change Paragraph</button>
+    </div><hr style="border-width: 5px;">
+
+    <div style="margin-bottom: 40px;">
+        <h2><code style="font-size: 120%;">&ltbody&gt</code> script example</h2>
+
+        <p style="font-size: 24px;" id="bodyExample">Body Script Paragraph.</p>
+
+        <button class="btn" type="button" onclick="bodyFunction()">Change Paragraph</button>
+    </div><hr style="border-width: 5px;">
+
+    <script>
+        function bodyFunction() {
+          document.getElementById("bodyExample").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+</body>
+</html>
